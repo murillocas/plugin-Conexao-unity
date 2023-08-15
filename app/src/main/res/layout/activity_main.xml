@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btnHandler"
+        app:layout_constraintEnd_toEndOf="@+id/EDTIp"
+        app:layout_constraintStart_toStartOf="@+id/EDTIp"
+        app:layout_constraintTop_toBottomOf="@+id/EDTIp" />
+
+    <Button
+        android:id="@+id/btnclient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btnclient"
+        app:layout_constraintEnd_toEndOf="@+id/btnHandler"
+        app:layout_constraintStart_toStartOf="@+id/btnHandler"
+        app:layout_constraintTop_toBottomOf="@+id/btnHandler" />
+
+    <TextView
+        android:id="@+id/txtenvio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtMensagem"
+        app:layout_constraintStart_toStartOf="@+id/txtMensagem"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensagem" />
+
+    <TextView
+        android:id="@+id/txtIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ip"
+        app:layout_constraintBottom_toBottomOf="@+id/txtenvio"
+        app:layout_constraintEnd_toStartOf="@+id/txtenvio"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensagem" />
+
+    <EditText
+        android:id="@+id/EDTIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtenvio"
+        app:layout_constraintStart_toStartOf="@+id/txtIp"
+        app:layout_constraintTop_toBottomOf="@+id/txtenvio" />
+
+    <Button
+        android:id="@+id/btnGetIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GetIp"
+        app:layout_constraintEnd_toEndOf="@+id/btnclient"
+        app:layout_constraintStart_toStartOf="@+id/btnclient"
+        app:layout_constraintTop_toBottomOf="@+id/btnclient" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetIp">
+
+        <Button
+            android:id="@+id/btnGetTreino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gesto Treino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnGetTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gesto teste"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCalcDTW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calc DTW"
+            app:layout_constraintEnd_toStartOf="@+id/btnGetTreino"
+            app:layout_constraintStart_toEndOf="@+id/btnGetTest"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtResultadoDTW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="resultado do DTW"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnCalcDTW"
+            app:layout_constraintStart_toStartOf="@+id/btnCalcDTW"
+            app:layout_constraintTop_toBottomOf="@+id/btnCalcDTW" />
+
+        <Button
+            android:id="@+id/salvarSerie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="salvar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultadoDTW" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="409dp"
+        android:layout_height="189dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetIp">
+
+        <Button
+            android:id="@+id/btncima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cima"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnesquerda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="esquerda"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btndireita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="direita"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnbaixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="baixo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtResultadoCOmpBanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rsultado comparação banco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCompBanco"
+        app:layout_constraintTop_toTopOf="@+id/btnCompBanco" />
+
+    <Button
+        android:id="@+id/btnCompBanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="comparar com banco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
