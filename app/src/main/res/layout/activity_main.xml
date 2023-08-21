@@ -10,7 +10,8 @@
         android:id="@+id/txtMensagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="mensagem"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,7 +20,7 @@
         android:id="@+id/btnHandler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="btnHandler"
+        android:text="Criar servidor"
         app:layout_constraintEnd_toEndOf="@+id/EDTIp"
         app:layout_constraintStart_toStartOf="@+id/EDTIp"
         app:layout_constraintTop_toBottomOf="@+id/EDTIp" />
@@ -28,7 +29,7 @@
         android:id="@+id/btnclient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="btnclient"
+        android:text="conectar servidor"
         app:layout_constraintEnd_toEndOf="@+id/btnHandler"
         app:layout_constraintStart_toStartOf="@+id/btnHandler"
         app:layout_constraintTop_toBottomOf="@+id/btnHandler" />
@@ -37,7 +38,8 @@
         android:id="@+id/txtenvio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="IP local"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/txtMensagem"
         app:layout_constraintStart_toStartOf="@+id/txtMensagem"
         app:layout_constraintTop_toBottomOf="@+id/txtMensagem" />
@@ -55,7 +57,7 @@
         android:id="@+id/EDTIp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="IP"
         app:layout_constraintEnd_toEndOf="@+id/txtenvio"
         app:layout_constraintStart_toStartOf="@+id/txtIp"
         app:layout_constraintTop_toBottomOf="@+id/txtenvio" />
@@ -64,7 +66,7 @@
         android:id="@+id/btnGetIp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GetIp"
+        android:text="salvar IP servidor"
         app:layout_constraintEnd_toEndOf="@+id/btnclient"
         app:layout_constraintStart_toStartOf="@+id/btnclient"
         app:layout_constraintTop_toBottomOf="@+id/btnclient" />
@@ -107,6 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="resultado do DTW"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/btnCalcDTW"
             app:layout_constraintStart_toStartOf="@+id/btnCalcDTW"
@@ -174,7 +177,8 @@
         android:id="@+id/txtResultadoCOmpBanco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="rsultado comparação banco"
+        android:textColor="@color/black"
+        android:text="resultado comparação banco"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnCompBanco"

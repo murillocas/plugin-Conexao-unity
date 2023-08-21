@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Boolean gesto_para_repuso = true;
     List<String> lista_de_gestos = Arrays.asList("GESTO1", "GESTO2","GESTO3","GESTO4");
 
+    Boolean ipencontrado = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -258,7 +259,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             SensorData sensorData2 = new SensorData(ListTreino);
             mddtw = new MDDTW(sensorData1,sensorData2);
             txtResultDTW.setText( "R: " + mddtw.getDistancia() );
-            Log.d("DTW", "print");
+            Log.d("DTW", "print" + mddtw.getDistancia() );
 
         } else if (R.id.salvarSerie == click) {
 
@@ -305,6 +306,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         txt_resultado_banco.setText(gesto_mais_proximo);
 
+        if (ipencontrado) {
+            if (gesto_mais_proximo == "GESTO1") {
+                enviarMensagem("0");
+                //direita
+            } else if (gesto_mais_proximo == "GESTO2") {
+                enviarMensagem("1");
+                //esquerda
+            } else if (gesto_mais_proximo == "GESTO3") {
+                enviarMensagem("2");
+                //cima
+            } else if (gesto_mais_proximo == "GESTO4") {
+                enviarMensagem("3");
+                //baixo
+            }
+        }
 
     }
 
@@ -347,6 +363,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 auxIp = edtIp.getText().toString();
             }
         });
+        ipencontrado = true;
         Log.d("teste", "encontraIp: " + auxIp);
     }
     public void mudarCorBTN_comparar(int cor){

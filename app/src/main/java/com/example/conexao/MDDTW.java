@@ -1,8 +1,6 @@
 package com.example.conexao;
 
-/**
- * Created by root on 7/7/16.
- */
+
 
 import android.util.Log;
 
